@@ -9,6 +9,7 @@
 
 :root {
   --background-color: #1b1a1a;
+  --background-color-2: #12121d;
 
   --color-scheme-1: #0C0032;
   --color-scheme-2: #190061;
@@ -52,7 +53,7 @@ body {
 }
 
 .nav-bar a:hover,
-.nav-bar a:active {
+.nav-bar a.active-tab {
   color: var(--color-scheme-4);
 }
 
@@ -61,7 +62,7 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 5rem 9% 2rem;
 }
 
 .hero {
@@ -102,6 +103,7 @@ section {
 
 .hero-content p {
   font-size: 1.2rem;
+  font-weight: 500;
   margin: 2rem 0 2rem;
 }
 
@@ -125,3 +127,42 @@ section {
 .hero-content .hero-connect a:active {
   color: var(--text-color);
 }
+
+.heading {
+  color: var(--text-color);
+  font-size: 2.5rem;
+}
+
+span {
+  color: var(--color-scheme-4);
+}
+
+.projects {
+  background: var(--background-color-2);
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3.5rem;
+}
+
+.projects-box {
+  display: flex;
+  /* position: relative; */
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--background-color);
+  overflow: hidden;
+}
+
+.projects-box img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
