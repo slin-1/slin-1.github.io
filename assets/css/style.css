@@ -98,3 +98,15 @@ section {
   font-size: 1.2rem;
   margin: 2rem 0 2rem;
 }
+
+.hero-content .hero-connect {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+
+.hero-content .hero-connect a {
+  color: var(--text-color);
+  font-size: 2.5rem;
+}
