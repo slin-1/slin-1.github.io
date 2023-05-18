@@ -49,7 +49,7 @@ body {
   color: var(--text-color);
   font-weight: 500;
   margin-left: 2rem;
-  transition: .2s;
+  transition: .3s;
 }
 
 .nav-bar a:hover,
@@ -117,11 +117,11 @@ section {
 .hero-content .hero-connect a {
   color: var(--text-color);
   font-size: 2.5rem;
+  transition: 0.3s;
 }
 
 .hero-content .hero-connect a:hover {
   color: var(--color-scheme-4);
-  transition: 0.3s;
 }
 
 .hero-content .hero-connect a:active {
@@ -147,22 +147,31 @@ span {
 }
 
 .projects-container {
+
+  /* limit to a max of 3 columns*/
+  --grid-row-gap: 6rem;
+  --grid-col-gap: 4rem;
+  --grid-column-count: 3;
+  --grid-item--min-width: 13rem;
+ 
+  --gap-count: calc(var(--grid-column-count) - 1);
+  --total-gap-width: calc(var(--gap-count) * var(--grid-col-gap));
+  --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+ 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 3.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+  gap: var(--grid-row-gap) var(--grid-col-gap);
 }
 
 .projects-box {
   display: flex;
   /* position: relative; */
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   box-shadow: 0 0 1rem var(--background-color);
   overflow: hidden;
 }
 
 .projects-box img {
   width: 100%;
-  object-fit: cover;
   display: block;
 }
-
