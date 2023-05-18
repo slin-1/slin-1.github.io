@@ -13,7 +13,7 @@
   --color-scheme-1: #0C0032;
   --color-scheme-2: #190061;
   --color-scheme-3: #240090;
-  --color-scheme-4: #3500D3;
+  --color-scheme-4: #3500d3;
   --color-scheme-5: #282828;
 
   --text-color: #ffffff;
@@ -46,14 +46,14 @@ body {
 .nav-bar a {
   font-size: 1.25rem;
   color: var(--text-color);
-  font-weight: 700;
+  font-weight: 500;
   margin-left: 2rem;
   transition: .2s;
 }
 
 .nav-bar a:hover,
 .nav-bar a:active {
-  color: #0051ff;
+  color: var(--color-scheme-4);
 }
 
 /* Place menu/hamburger icon here */
@@ -69,6 +69,12 @@ section {
   justify-content: center;
   align-items: center;
   padding: 8%;
+  background: linear-gradient(
+    rgba(36, 0, 144, 0.2), 
+    rgba(0, 0, 0, 0.5)
+  ), url(../../images/hero_background.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-content {
@@ -109,4 +115,13 @@ section {
 .hero-content .hero-connect a {
   color: var(--text-color);
   font-size: 2.5rem;
+}
+
+.hero-content .hero-connect a:hover {
+  color: var(--color-scheme-4);
+  transition: 0.3s;
+}
+
+.hero-content .hero-connect a:active {
+  color: var(--text-color);
 }
