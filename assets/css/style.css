@@ -11,11 +11,12 @@
   --background-color: #1b1a1a;
   --background-color-2: #12121d;
 
-  --color-scheme-1: #0C0032;
-  --color-scheme-2: #190061;
-  --color-scheme-3: #240090;
-  --color-scheme-4: #3500d3;
-  --color-scheme-5: #282828;
+  --clr-deep-purple-1: #0C0032;
+  --clr-deep-purple-2: #190061;
+  --clr-purple-1: #240090;
+  --clr-purple-2: #3500d3;
+  --clr-rose: #e11d48;
+  --clr-dark-grey: #282828;
 
   --text-color: #ffffff;
 }
@@ -54,7 +55,7 @@ body {
 
 .nav-bar a:hover,
 .nav-bar a.active-tab {
-  color: var(--color-scheme-4);
+  color: var(--clr-purple-2);
 }
 
 /* Place menu/hamburger icon here */
@@ -98,7 +99,7 @@ section {
   font-size: 1.45rem;
   font-weight: 900;
   color: transparent;
-  -webkit-text-stroke: 1px var(--color-scheme-4);
+  -webkit-text-stroke: 1px var(--clr-purple-2);
 }
 
 .hero-content p {
@@ -111,7 +112,7 @@ section {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 5vw;
+  gap: 3.5vw;
 }
 
 .hero-content .hero-connect a {
@@ -121,7 +122,7 @@ section {
 }
 
 .hero-content .hero-connect a:hover {
-  color: var(--color-scheme-4);
+  color: var(--clr-purple-2);
 }
 
 .hero-content .hero-connect a:active {
@@ -134,7 +135,7 @@ section {
 }
 
 span {
-  color: var(--color-scheme-4);
+  color: var(--clr-purple-2);
 }
 
 .projects {
