@@ -53,6 +53,15 @@ button {
   color: inherit;
 }
 
+section {
+  min-height: 100vh;
+  padding: 5rem 9% 2rem;
+}
+
+span {
+  color: var(--clr-purple-2);
+}
+
 .btn {
   font-weight: 600;
   text-decoration: none;
@@ -70,6 +79,13 @@ button {
   transform: translateY(-3px);
   box-shadow: 0 14px 28px rgba(160, 29, 57, 0.25),
     0 10px 10px rgba(160, 29, 57, 0.22), 0 0 120px -10px var(--clr-rose);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding: var(--size-base);
+  gap: var(--size-base);
 }
 
 .header {
@@ -106,11 +122,6 @@ button {
 
 /* Place menu/hamburger icon here */
 
-
-section {
-  min-height: 100vh;
-  padding: 5rem 9% 2rem;
-}
 
 .hero {
   display: flex;
@@ -178,47 +189,69 @@ section {
 .heading {
   color: var(--text-white);
   font-size: var(--size-4xl);
+  text-align: center;
+  margin-bottom: var(--size-6xl);
 }
 
-span {
-  color: var(--clr-purple-2);
+.subheading {
+  color: var(--text-white);
+  font-size: var(--size-xl);
+  text-align: center;
+  padding: var(--size-base);
 }
+
 
 .projects {
+  position: relative;
   background: var(--background-color-2);
 }
 
-.projects h2 {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
 .projects-container {
-
-  /* limit to a max of 3 columns*/
-  --grid-row-gap: 6rem;
-  --grid-col-gap: 4rem;
-  --grid-column-count: 3;
-  --grid-item--min-width: 13rem;
- 
-  --gap-count: calc(var(--grid-column-count) - 1);
-  --total-gap-width: calc(var(--gap-count) * var(--grid-col-gap));
-  --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
- 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
-  gap: var(--grid-row-gap) var(--grid-col-gap);
-}
-
-.projects-box {
   display: flex;
-  /* position: relative; */
-  border-radius: var(--size-xl);
-  box-shadow: 0 0 1rem var(--background-color);
-  overflow: hidden;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.projects-box img {
-  width: 100%;
-  display: block;
+.projects-format-containers {
+  display: flex;
+  gap: var(--size-4xl);
+}
+
+.projects-indiv-container {
+  padding: var(--size-2xl);
+  flex: 1;
+  background: transparent;
+  border-radius: var(--size-3xl);
+  border: 0.1rem solid;
+  text-align: center;
+}
+
+.details-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: var(--size-5xl);
+  justify-content: space-around;
+}
+
+.color-container {
+  border-color: var(--clr-purple-1);
+  background: var(--background-color-2);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
 }
