@@ -100,25 +100,30 @@ span {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 5%;
+  padding: 1rem 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: transparent;
+  transition: 0.3s;
+}
+
+.header.sticky {
+  background: var(--background-color-2);
 }
 
 .logo {
-  font-size: var(--size-4xl);
+  font-size: var(--size-3xl);
   color: var(--text-white);
   font-weight: 500;
 }
 
 .nav-bar a {
-  font-size: var(--size-xl);
+  font-size: var(--size-lg);
   color: var(--text-white);
   font-weight: 500;
   margin-left: 2rem;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .nav-bar a:hover,
@@ -209,7 +214,7 @@ span {
 
 .projects {
   position: relative;
-  background: var(--background-color-2);
+  background: var(--background-color-1);
 }
 
 .projects-container {
@@ -258,7 +263,7 @@ span {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 5rem 5%;
+  padding: 3rem 5%;
   background: transparent;
 }
 
