@@ -53,6 +53,12 @@ button {
   color: inherit;
 }
 
+p {
+  font-size: var(--size-base);
+  text-align: center;
+  color: var(--text-white);
+}
+
 section {
   min-height: 100vh;
   padding: 5rem 9% 2rem;
@@ -222,7 +228,7 @@ span {
   flex: 1;
   background: transparent;
   border-radius: var(--size-3xl);
-  border: 0.1rem solid;
+  border: 0.15rem solid;
   text-align: center;
 }
 
@@ -246,12 +252,39 @@ span {
   height: 90%;
 }
 
-.project-title {
-  margin: 1rem;
-  color: black;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem 5%;
+  background: transparent;
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+.footer-content {
+  max-width: 100rem;
+  text-align: center;
+}
+
+.footer-content .footer-connect {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5vw;
+  padding-bottom: var(--size-base);
+}
+
+.footer-content .footer-connect a {
+  color: var(--text-white);
+  font-size: var(--size-2xl);
+  transition: 0.3s;
+}
+
+.footer-content .footer-connect a:hover {
+  color: var(--clr-purple-2);
+}
+
+.footer-content .footer-connect a:active {
+  color: var(--text-white);
 }
