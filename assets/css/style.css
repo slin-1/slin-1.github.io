@@ -100,6 +100,8 @@ span {
   display: flex;
   justify-content: center;
   padding: var(--size-base);
+  padding-left: var(--size-5xl);
+  padding-right: var(--size-5xl);
   gap: var(--size-base);
 }
 
@@ -169,7 +171,6 @@ span {
 
 .hero-content .animate-text {
   position: relative;
-  /* width: 32.8rem; */
 }
 
 .hero-content .animate-text h3 {
@@ -234,6 +235,7 @@ span {
 
 .projects-format-containers {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--size-4xl);
 }
 
@@ -301,4 +303,36 @@ span {
 
 .footer-content .footer-connect a:active {
   color: var(--text-white);
+}
+
+
+/* xs */
+/* @media (max-width: 475px) {
+  
+} */
+
+/* sm */
+/* @media (max-width: 640px) {
+  
+} */
+
+/* md */
+/* @media (max-width: 768px) {
+
+} */
+
+/* lg */
+@media (max-width: 1024px) {
+  html {
+    font-size: 90%;
+  }
+
+  .header {
+    padding: 1rem 3.5%;
+  }
+
+  .footer {
+    padding: 2rem 5%;
+    /* padding: 3rem 5%; */
+  }
 }

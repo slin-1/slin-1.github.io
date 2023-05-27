@@ -21,7 +21,6 @@ window.onscroll = () => {
           .classList.add('active-tab');
       }
     }
-
   }
 
   // Enables header background color change after scrolling
