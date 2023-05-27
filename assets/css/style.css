@@ -1,3 +1,7 @@
+/* 
+  Steven Lin's Portfolio
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
@@ -16,6 +20,7 @@
   --clr-deep-purple-2: #190061;
   --clr-purple-1: #240090;
   --clr-purple-2: #3500d3;
+  --clr-purple-3: #5900ff;
   --clr-rose: #e11d48;
   --clr-dark-grey: #282828;
 
@@ -37,6 +42,10 @@
   --size-8xl: 6rem;
   --size-9xl: 8rem;
   --size-10xl: 10rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -61,7 +70,7 @@ p {
 
 section {
   min-height: 100vh;
-  padding: 5rem 9% 2rem;
+  padding: 7rem 9% 2rem;
 }
 
 span {
@@ -109,7 +118,7 @@ span {
 }
 
 .header.sticky {
-  background: var(--background-color-2);
+  background: var(--clr-deep-purple-2);
 }
 
 .logo {
@@ -128,7 +137,7 @@ span {
 
 .nav-bar a:hover,
 .nav-bar a.active-tab {
-  color: var(--clr-purple-2);
+  color: var(--clr-purple-3);
 }
 
 /* Place menu/hamburger icon here */
@@ -167,7 +176,7 @@ span {
   font-size: var(--size-2xl);
   font-weight: 900;
   color: transparent;
-  -webkit-text-stroke: 1px var(--clr-purple-2);
+  -webkit-text-stroke: 1px var(--clr-purple-3);
 }
 
 .hero-content p {
