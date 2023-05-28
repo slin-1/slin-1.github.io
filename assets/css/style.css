@@ -112,7 +112,7 @@ span {
 .btn-container {
   display: flex;
   justify-content: center;
-  padding: var(--size-base) var(--size-5xl);
+  padding: var(--size-base) var(--size-6xl);
   gap: var(--size-base);
 }
 
