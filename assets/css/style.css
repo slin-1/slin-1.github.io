@@ -178,9 +178,11 @@ span {
 
 .hero-content .animate-text h3 {
   font-size: var(--size-2xl);
-  font-weight: 900;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--clr-purple-3);
+  font-weight: 700;
+}
+
+.hero-content .animate-text span {
+  color: var(--clr-purple-3);
 }
 
 .hero-content p {
