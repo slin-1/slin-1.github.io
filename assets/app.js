@@ -6,6 +6,15 @@
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
+// Hamburger menu navigation
+let hamburgerIcon = document.querySelector('#hamburger-icon');
+let navBar = document.querySelector('.nav-bar');
+
+hamburgerIcon.onclick = () => {
+  hamburgerIcon.classList.toggle('fa-arrow-right');
+  navBar.classList.toggle('active');
+}
+
 window.onscroll = () => {
   // Updates the header navigation's 'active-tab'
   for (const section of sections) {
