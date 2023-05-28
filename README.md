@@ -1,6 +1,7 @@
-# Portfolio
+# Portfolio (slin-1.github.io)
 
-### Developed by: Steven Lin
+### Developed by: Steven Lin  
+#### Visit my portfolio [here](https://slin-1.github.io/)
 
 ***
 
